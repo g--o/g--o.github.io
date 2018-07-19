@@ -1,9 +1,85 @@
+
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<title>g_o</title>
+
+	<!-- Bootstrap + jQuery -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" />
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js"></script>
+
+	<!-- theme -->
+	<link href="style.css" rel="stylesheet" />
 </head>
-<body>
-	<h2>g_o</h2>
+<body class="site-wrapper">
+	<!-- header -->
+	<div class="header clearfix">
+		<!-- brand -->
+		<h3 class="brand">g_o</h3>
+		<!-- menu -->
+		<nav class="nav nav-header">
+			<a data-toggle="tab" class="nav-link active" href="#home">Home</a>
+			<a data-toggle="tab" class="nav-link" href="#projects">Projects</a>
+			<a data-toggle="tab" class="nav-link" href="#contact">Contact</a>
+		</nav>
+	</div>
+
+	<!-- content -->
+	<div id="content" class="tab-content">
+
+		<!-- home -->
+		<div id="home" class="tab-pane fade show active">
+			<h2>Welcome to g_o's site!</h2>
+			<p>Here you can find about my projects, documentations, examples, philosophy and more!</p>
+
+			<h4>News</h4>
+
+			<p class="jumbotron"><b>duborsub</b> is in version 0.0.3 now! <a href="http://duborsub.net">Visit now.</a></p>
+			<p class="jumbotron"><b>PTFTP</b> is in version 1.3 now! <a href="http://ptftp.net">Official website.</a></p>
+			<p class="jumbotron"><b>JSCF</b> is looking for open-source developers! <a href="https://github.com/g--o/JSCF">Github repo.</a></p>
+
+		</div>
+
+		<!-- projects -->
+		<div id="projects" class="tab-pane fade">
+			<h2>Projects</h2>
+			<br/><br/>
+
+			<div class="row">
+				<div class="col">
+					<h4>JSCF</h4>
+					<p>
+						<img src="images/jscf.png" /><br/>
+						JavaScript Canvas Framework.<br/>
+						<a href="https://github.com/g--o/JSCF">Github repo</a> |
+						<a href="https://g--o.github.io/JSCF/release/docs/index.html">Project documentation</a> |
+						<a href="https://g--o.github.io/JSCF/release/component-docs/index.html">Project components documentation</a>
+					</p>
+				</div>
+				<div class="col">
+					<h4>PTFTP</h4>
+					<p>
+						<img src="images/ptftp.jpg" /><br/>
+						A free, light, explorer-like ftp client.<br/>
+						<a href="http://ptftp.net">Project site</a>
+					</p>
+				</div>
+			</div>
+		</div>
+
+		<!-- contact -->
+		<div id="contact" class="tab-pane fade">
+			<h2>Contact</h2>
+			<p>Feel free to email me any time: goproducti@gmail.com</p>
+		</div>
+
+	</div>
+
+	<!-- footer -->
+	<div id="footer"></div>
 </body>
 </html>
