@@ -45,6 +45,12 @@ p {
     }
 }
 
+.brand a {
+	color: inherit;
+	text-decoration: underline;
+}
+
+
 /* menu */
 
 .nav-header .nav-link {
