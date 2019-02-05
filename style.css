@@ -20,12 +20,23 @@ html, body {
 }
 
 p {
-    color: #ccc;
+	color: #ccc;
 }
 
 .jumbotron {
+	color: #ccc;
     background: #6a6a6a;
     border: solid 2px #262626;
+}
+
+.jumbocontent {
+	text-align:left;
+	padding-left: 20%;
+	margin-bottom: 10px;
+}
+
+.jumbofooter {
+	
 }
 
 /*************
