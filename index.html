@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,8 +5,9 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<title>g_o</title>
 
-	<!-- Bootstrap + jQuery -->
+	<!-- Bootstrap + Icons + jQuery -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js"></script>
@@ -17,7 +17,7 @@
 </head>
 <body class="site-wrapper">
 	<!-- header -->
-	<div class="header clearfix">
+	<div class="header clearfix" id = "header">
 		<!-- brand -->
 		<span class="brand">
 			<h2>g_o</h2>
@@ -27,7 +27,7 @@
 		<nav class="nav nav-header">
 			<a data-toggle="tab" class="nav-link active" href="#home">Home</a>
 			<a data-toggle="tab" class="nav-link" href="#projects">Projects</a>
-			<a data-toggle="tab" class="nav-link" href="#contact">Contact</a>
+			<a data-toggle="tab" class="nav-link" href="#about">About</a>
 		</nav>
 	</div>
 
@@ -36,14 +36,21 @@
 
 		<!-- home -->
 		<div id="home" class="tab-pane fade show active">
-			<h2>Welcome to g_o's site!</h2>
 			<p>
-				Here you can find about my projects, documentations, examples, philosophy and more!<br/>
-				<a href="https://github.com/g--o">Github</a> |
-				<a href="https://sourceforge.net/u/g--o/profile/">SourceForge</a>
+				Here you can find about my projects, links, news and more!<br/>
+				<a href="https://github.com/g--o" class="fa icon">&#xf09b;</a> &nbsp;
+				<a href="https://sourceforge.net/u/g--o/profile/" class="fa icon">SF</a>
+				<a href="https://pythonfunblog.wordpress.com/" class="fa icon">&#xf19a;</a>
 			</p>
 
 			<h4>News</h4>
+			<div class="jumbotron">
+				<p class="jumbocontent">
+					<b>Froze Lavinder</b>, the ambitious project will be split into simpler projects in the future.<br/>
+					<b>Bounty hunting</b> - doing some bounty hunting.
+				</p>
+				<i>Sep 21 2019</i>
+			</div>
 			<div class="jumbotron">
 				<p class="jumbocontent">
 					<b>Dropped IRCv3</b>, no longer active in the project because of difference in interests.<br/>
@@ -103,7 +110,7 @@
 					<p>
 						<img src="images/dos.png" /><br/>
 						Anime dub or sub poll site. (Closed Source)<br/>
-						<a href="https://duborsub.sourceforge.io/">Visit Now</a>
+						<a href="https://duborsub.sourceforge.io/">[Archived Version]</a>
 					</p>
 				</div>
 				<div class="col">
@@ -111,7 +118,7 @@
 					<p>
 						<img src="images/ptftp.png" /><br/>
 						A free, light, explorer-like ftp client. (Open Source)<br/>
-						<a href="https://sourceforge.net/projects/ptftp/">Sourceforge</a>
+						<a href="https://sourceforge.net/projects/ptftp/">[Sourceforge]</a>
 					</p>
 				</div>
 			</div>
@@ -121,46 +128,67 @@
 					<p>
 						<img src="images/jscf.png" /><br/>
 						JavaScript Canvas Framework. (Open Source)<br/>
-						<a href="https://github.com/g--o/JSCF">Github repo</a> |
-						<a href="https://github.com/g--o/JSCF/wiki">Project wiki</a>
+						<a href="https://github.com/g--o/JSCF">[Github repo]</a> |
+						<a href="https://github.com/g--o/JSCF/wiki">[Project wiki]</a>
 					</p>
 				</div>
+				<div class="col">
+					<h4>Contributing to</h4>
+					<br/>
+					<p>
+						Voluntary open source adventures: <br/>
+						<ul>
+							<a href="https://github.com/SuperTux/supertux">[Supertux]</a> |
+							<a href="https://github.com/Bitl/FMBot_Discord">[FMBot]</a> |
+							<a href="https://github.com/ircv3/ircv3-specifications">[IRCv3]</a>*
+						</ul>
+						* rfc security discussions only
+					</p>
+				</div>
+			</div>
+			<div class="row">
 				<div class="col">
 					<h4>Discontinued Projects</h4>
 					<br/>
 					<p>
-						Simple desktop environment in python.
+						<b>CuteDE</b> - Simple desktop environment in python.<br/>
 						<a href="https://github.com/g--o/CuteDE">[Github repo]</a>
 					</p>
 					<p>
-						Simple neural network framework.
+						<b>Untitled</b> - Simple neural network framework.<br/>
 						<a href="https://github.com/g--o/NeuralNetwork">[Github repo]</a>
 					</p>
 					<p>
-						LWJGL2DE - 2D Java LWJGL game engine.
+						<b>LWJGL2DE</b> - 2D Java LWJGL game engine.<br/>
 						<a href="https://github.com/g--o/LWJGL2DE">[Github repo]</a>
-					</p>
-
-					<h4>Contributing to</h4>
-					<br/>
-					<p>
-						<a href="https://github.com/SuperTux/supertux">Supertux</a> |
-						<a href="https://github.com/Bitl/FMBot_Discord">FMBot discord bot</a> |
-						<a href="https://github.com/ircv3/ircv3-specifications">IRCv3 (discussion only)</a>
 					</p>
 				</div>
 			</div>
 		</div>
 
-		<!-- contact -->
-		<div id="contact" class="tab-pane fade">
-			<h2>Contact</h2>
-			<p>Email me: <a href="mailto:go.prodml@gmail.com">go.prodml@gmail.com</a></p>
+		<!-- about -->
+		<div id="about" class="tab-pane fade">
+			<h2>About</h2>
+			<div class="row">
+				<div class="col">
+					<h4>Press</h4>
+					<p>
+						<a href="https://newsletter.nixers.net/entries.php#89">Nixers #89</a> - feature of my article about making a DE.
+					</p>
+				</div>
+				<div class="col">
+					<h4>Contact</h4>
+					<p>
+						Email - <a href="mailto:go.prodml@gmail.com">go.prodml@gmail.com</a>
+					</p>
+				</div>
+			</div>
 		</div>
-
 	</div>
 
 	<!-- footer -->
-	<div id="footer"></div>
+	<div id="footer">
+		<a href="#header" class="fa icon">&#xf0aa;</a>
+	</div>
 </body>
 </html>
