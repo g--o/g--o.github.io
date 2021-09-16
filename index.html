@@ -1,289 +1,94 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="h-100">
 <head>
-	<meta name="robots" content="noindex">
 	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<title>g_o</title>
-
-	<!-- Bootstrap + Icons + jQuery -->
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" />
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js"></script>
-
-	<!-- theme -->
-	<link href="style.css" rel="stylesheet" />
+	<meta name="robots" content="noindex">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>About</title>
+	<!--- Bootstrap and jQuery -->
+	<link rel="stylesheet" href="libs/bootstrap.min.css">
+	<link rel="stylesheet" href="libs/fontawesome.min.css">
+	<script src="libs/jquery.min.js"></script>
+	<script src="libs/bootstrap.min.js"></script>
+	<!-- own styling  -->
+	<link rel="stylesheet" href="style.css">
 </head>
-<body class="site-wrapper">
-	<!-- header -->
-	<div class="header clearfix" id = "header">
-		<!-- brand -->
-		<span class="brand">
-			<h2>g_o</h2>
-		</span>
+<body class="bg-dark h-100 container-fluid d-flex flex-column">
 
-		<!-- menu -->
-		<nav class="nav nav-header">
-			<a data-toggle="tab" class="nav-link active" href="#home">Home</a>
-			<a data-toggle="tab" class="nav-link" href="#projects">Projects</a>
-			<a data-toggle="tab" class="nav-link" href="#fun">Fun</a>
-			<a data-toggle="tab" class="nav-link" href="#about">About</a>
-		</nav>
-	</div>
-
+<!-- title -->
+<div class="jumbotron-fluid text-center text-white bg-dark">
+	<h1>About Me</h1>
+</div>
+<!-- main -->
+<div class="container flex-grow-1">
+	<!-- menu -->
+	<nav class="btn-group nav">
+		<a class="btn active" data-toggle="tab" href="#nav-about">About</a>
+		<a class="btn" data-toggle="tab" href="#nav-projects">Projects</a>
+		<a class="btn" data-toggle="tab" href="#nav-archive">Archive</a>
+	</nav>
 	<!-- content -->
-	<div id="content" class="tab-content">
-
-		<!-- home -->
-		<div id="home" class="tab-pane fade show active">
-			<p>
-				Here you can find about my projects, links, news and more!<br/>
-				<a href="https://github.com/g--o" class="fa icon">&#xf09b;</a> &nbsp;
-				<a href="https://sourceforge.net/u/g--o/profile/" class="fa icon">SF</a>
-				<a href="https://pythonfunblog.wordpress.com/" class="fa icon">&#xf19a;</a>
-			</p>
-
-			<h4>News</h4>
-
-			<div class="jumbotron">
-				<p class="jumbocontent">
-					<b>University studies</b> - as studying for my degree demands more and more of my time I have stalled progress on most of my projects for now.
-				</p>
-				<i>Sep 02 2020</i>
-			</div>
-			<div class="jumbotron">
-				<p class="jumbocontent">
-					<b>Froze Lavinder</b>, the ambitious project will be split into simpler projects in the future.<br/>
-					<b>Bounty hunting</b> - doing some bounty hunting.
-				</p>
-				<i>Sep 21 2019</i>
-			</div>
-			<div class="jumbotron">
-				<p class="jumbocontent">
-					<b>Dropped IRCv3</b>, no longer active in the project because of difference in interests.<br/>
-					<b>Focusing on Lavinder</b>, a new desktop environment I work on with <a href="https://github.com/ruapotato"><i>ruapotato</i></a>.<br/>
-				</p>
-				<i>Apr 12 2019</i>
-			</div>
-			<div class="jumbotron">
-				<p class="jumbocontent">
-				Most of my personal projects are stalled, now focusing on other open source projects:<br/>
-					- <b>IRCv3</b> specs<br/>
-					- <b>Several discord bots</b><br/>
-				</p>
-				<i>Feb 05 2019</i>
-			</div>
-			<div class="jumbotron">
-				<p class="jumbocontent">
-					- <b>QtLavinder</b> an experimental desktop environment by me and HackersGame.<br/>
-					- <b>Quickey</b> is an experimental easy to write & decode textual music language to pass on text channels.<br/>
-					- <b>JSCF</b>'s development is stalled <br/>
-					- <b>PTFTP</b>'s website is no longer active. Visit github instead. <br/>
-					- <b>duborsub</b> (closed source) is no longer active. If you need it it's still hosted on a slow service: <a href="https://duborsub.sourceforge.io/">[Visit here].</a><br/>
-				</p>
-				<i>Feb 05 2019</i>
-			</div>
-			<div class="jumbotron">
-				<b>duborsub</b> (closed source) is in version 0.0.4 now! <a href="http://duborsub.net">[Visit now].</a><br/>
-				<i>Oct 28 2018</i>
-			</div>
-			<div class="jumbotron">
-				<b>JSCF</b> (open-source) is looking for help! <a href="https://github.com/g--o/JSCF/issues">[Github issues].</a><br/>
-				<i>Oct 27 2018</i>
-			</div>
-			<div class="jumbotron">
-				<b>PTFTP</b> is in version 1.4 now! <a href="http://ptftp.net">[Official website].</a><br/>
-				<i>July 21 2018</i>
-			</div>
-			<div class="jumbotron">
-				<b>JSCF</b> is looking for open-source developers! <a href="https://github.com/g--o/JSCF">[Github repo].</a><br/>
-				<i>July 21 2018</i>
-			</div>
-			<div class="jumbotron">
-				<b>duborsub</b> (closed source) is in version 0.0.3 now! <a href="http://duborsub.net">[Visit now].</a><br/>
-				<i>July 18 2018</i>
-			</div>
-
-		</div>
-
-		<!-- projects -->
-		<div id="projects" class="tab-pane fade">
-			<h2>Projects</h2>
+	<div class="flex-grow-1 tab-content content">
+		<!-- about -->
+		<div class="tab-pane fade show active" id="nav-about" role="tabpanel">
+			Welcome, this site is dedicated to my public projects.
 			<br/><br/>
-
-			<h4>Contributions</h4>
-
-			<div class="row">
-				<div class="col">
-					<h4>Casual Open Source</h4>
-					<br/>
-					<p>
-						WIP:
-						<br/>
-						<a href="https://bugs.launchpad.net/sbcl/+bug/313202">[SBCL]</a>
-					</p>
-					<p>
-						Some projects I helped
-						<ul>
-							<a href="https://github.com/SuperTux/supertux">[Supertux]</a> |
-							<a href="https://github.com/Bitl/FMBot_Discord">[FMBot]</a> |
-							<a href="https://github.com/ircv3/ircv3-specifications">[IRCv3]</a>*
-						</ul>
-						* rfc discussions only
-					</p>
-				</div>
-			</div>
+			<b>Links:</b>
+				<a href="https://github.com/g--o" class="fab fa-github"></a>
+				<a href="https://pythonfunblog.wordpress.com/" class="fab fa-wordpress"></a>
+				<a href="https://sourceforge.net/u/g--o/profile/">SF</a>
+			<br/>
+			<b>Contact:</b> go.prodml {at} gmail.com
+		</div>
+		<!-- projects -->
+		<div class="tab-pane fade" id="nav-projects">
+			<h4>Open Source Contributions</h4>
+			<ul>
+				<li>
+					<b>supertux</b>: narration system
+					<a href="https://github.com/SuperTux/supertux" class="fab fa-github"></a>
+				</li>
+				<li>
+					<b>fmbot</b>: performance and fixes, helping staff
+					<a href="https://github.com/Bitl/FMBot_Discord" class="fab fa-github"></a>
+				</li>
+			</ul>
 
 			<h4>My Own Stuff</h4>
-
-			<div class="row">
-				<div class="col">
-					<h4>HebrewFix</h4>
-					<h7>~10k downloads</h7>
-					<p>
-						<img src="images/hebrewfix.png" /><br/>
-						Probably the most popular israeli plugin for minecraft servers. <br/>
-						<a href="https://bitbucket.org/hebrewfix/hebrewfix-plugin/src/develop/">[source]</a><br/>
-					</p>
-				</div>
-				<div class="col">
-					<h4>Minify-j-s</h4>
-					<h7>~5k downloads</h7>
-					<p>
-						<img src="images/minify.png" /><br/>
-						a simple plugin for the atom editor, for minifying multiple js files at once.<br/>
-						<a href="https://atom.io/packages/minify-j-s">[package+src]</a>
-					</p>
-				</div>
-				<div class="col">
-					<h4>Dub Or Sub</h4>
-					<h7>2600+ votes</h7>
-					<p>
-						<img src="images/dos.png" /><br/>
-						Anime dub or sub poll site. (Closed source)<br/>
-						<a href="https://duborsub.sourceforge.io/">[Archived Version]</a>
-					</p>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col">
-					<h4>CuteDE</h4>
-					<p>
-						<img src="images/cutede.png" /><br/>
-						Skeleton desktop environment in python. (Open Source)<br/>
-						Featured in nixers newsletter.<br/>
-						<a href="https://github.com/g--o/CuteDE">[Github repo]</a>
-					</p>
-				</div>
-				<div class="col">
-					<h4>PTFTP</h4>
-					<h7>200+ downloads</h7>
-					<p>
-						<img src="images/ptftp.png" /><br/>
-						A free, light, explorer-like ftp client. (Open Source)<br/>
-						<a href="https://sourceforge.net/projects/ptftp/">[Sourceforge]</a>
-					</p>
-				</div>
-				<div class="col">
-					<h4>JSCF</h4>
-					<p>
-						<img src="images/jscf.png" /><br/>
-						JavaScript Canvas Framework. (Open Source)<br/>
-						Still in development & looking for contributors.<br/>
-						<a href="https://github.com/g--o/JSCF">[Github repo]</a> |
-						<a href="https://github.com/g--o/JSCF/wiki">[Project wiki]</a>
-					</p>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col">
-					<h4>Archive</h4>
-					<br/>
-					<p>
-						<b>Simple NN</b> - 4 day project of making neural network framework.<br/>
-						<a href="https://github.com/g--o/NeuralNetwork">[Github repo]</a>
-					</p>
-					<p>
-						<b>LWJGL2DE</b> - 2D Java LWJGL game engine.<br/>
-						<a href="https://github.com/g--o/LWJGL2DE">[Github repo]</a>
-					</p>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col">
-					<h4>Failed passion projects</h4>
-					<h7>stuff from the distant past</h7>
-					<br/><br/>
-					<p>
-						<b>The White World</b><br/>
-						Bringing the first Israeli VN to life as a teen. (estimated 100 plays)<br/>
-						 I managed ~8 anonimous volunteers at a time. while the result wasn't<br/>
-						 great, it was a very enjoyable challenge.<br/>
-						<a href="https://aildevteam.github.io/website/">[archive]</a>
-					</p>
-					<p>
-						<b>C++ & DirectX & WinAPI shenanigans</b><br/>
-						In high school I was making C++/DX engines<br/>
-						and gui apps hardcoded via WinAPI and other low level fun.<br/> I made a few games and demos using it.<br/>
-						<a href="https://github.com/g--o/Archive">[github archive]</a>
-					</p>
-					<p>
-						<b>Game Jams</b><br/>
-						I participated in LudumDare compo for several years.<br/>
-						I'll spare you my old profile, some of the games i made as a teen.<br/>
-						<a href="https://ldjam.com/users/g-o/">[profile]</a>
-					</p>
-				</div>
-			</div>
+			<ul>
+				<li>
+					<b>Hebrewfix</b>: simple hebrew fixer for bukkit (~11k downloads)
+					<a href="https://bitbucket.org/hebrewfix/hebrewfix-plugin/src/develop/"><i class="fab fa-bitbucket"></i></a>
+				</li>
+				<li>
+					<b>Minify-j-s</b>: simple atom plugin for minifying js files via terser (~6.5k downloads)
+					<a href="https://atom.io/packages/minify-j-s" class="fas fa-atom"></a>
+				</li>
+				<li>
+					<b>DubOrSub</b>: a short lived website to decide watching a certain anime dub/sub. (~2.6k votes, archived)
+					<a href="https://duborsub.sourceforge.io/" class="fas fa-link"></a>
+				</li>
+				<li>
+					<b>CuteDE</b>: skeleton of python based linux desktop environment.
+					(featured on <a href="https://newsletter.nixers.net/entries.php#89">Nixers #89</a>)
+					<a href="https://github.com/g--o/CuteDE" class="fab fa-github"></a>
+				</li>
 		</div>
-
-		<!-- fan memes -->
-		<div id="fun" class="tab-pane fade">
-			<p>My favorite section</p>
-			<h4>Fan Memes</h4>
-			<div class="row">
-				<div class="col">
-					<p>
-						<img src="images/meme-fmbot.jpg" /><br/>
-						<b>FMBot</b>. meme made from back when I was pretty active and made some performance improvements.
-					</p>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col">
-					<p>
-						<img src="images/meme-hebrewfix.png" /><br/>
-						<b>Hebrewfix</b>. Zoomers can make a meme on the simplest of software.
-					</p>
-				</div>
-			</div>
-		</div>
-
-		<!-- about -->
-		<div id="about" class="tab-pane fade">
-			<h2>About</h2>
-			<div class="row">
-				<div class="col">
-					<h4>Press</h4>
-					<p>
-						<a href="https://newsletter.nixers.net/entries.php#89">Nixers #89</a> - feature of my article about making a DE.
-					</p>
-				</div>
-				<div class="col">
-					<h4>Contact</h4>
-					<p>
-						Email - <a href="mailto:go.prodml@gmail.com">go.prodml@gmail.com</a>
-					</p>
-				</div>
-			</div>
+		<!-- archive -->
+		<div class="tab-pane fade" id="nav-archive">
+			Unmerged contributions i might finish someday:
+			<ul>
+				<li>partial bugfix of sbcl's alien byval (opensource lisp compiler)</li>
+				<li>partial bugfix for mcclim's threading (opensource lisp package)</li>
+			</ul>
+			Old hobbies:
+			<ul>
+				<li>participating in game jams (ludum dare, philosophy game jams)</li>
+				<li>learning and making stuff for fun: dx/ogl game engines; simple neural network & training framework; more..</li>
+				<li>when i was a lot younger: programmed & managed a failed visual novel with ~8 strangers</li>
+			</ul>
 		</div>
 	</div>
-
-	<!-- footer -->
-	<div id="footer">
-		<a href="#header" class="fa icon">&#xf0aa;</a>
-	</div>
+</div>
 </body>
 </html>
